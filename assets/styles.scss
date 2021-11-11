@@ -8,29 +8,42 @@ $white : #fff;
 
 
 body {
-  background-color: $space-cadet;
+  background-color: $oxford-blue;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+// header section
 
 header {
   background-color: $neon-blue;
-  padding: 15px 0;
+  padding: 20px 0;
 
   .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
-}
 
-ul {
-  display: flex;
+  ul {
+    display: flex;
+  
+    li {
+      margin: 0 10px;
 
-  li {
-    margin: 0 10px;
-    
-    a {
-      color: $space-cadet;
-      text-decoration: none;
-      font-size: 20px;
+      i {
+        font-size: 30px;
+      }
+      
+      a {
+        color: $oxford-blue;
+        text-decoration: none;
+        font-size: 22px;
+        font-weight: 600;
+
+        &:hover {
+          color: $white;
+        }
+      }
     }
   }
 }
@@ -41,6 +54,120 @@ ul {
   max-width: 1640px;
 }
 
+.wrapper {
+  display: flex;
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
 h1, h2, p {
   color: $white;
+  line-height: 1.2em;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+// about section
+
+.about {
+  margin-top: 80px;
+
+  img {
+    max-width: 250px;
+    border: solid 5px $cool-grey;
+    border-radius: 10px;
+    flex-basis: 40%;
+    margin-right: 100px;
+  }
+
+  p {
+    flex-basis: 60%;
+    font-size: 22px;
+  }
+}
+
+section aside {
+  display: flex;
+  align-items: center;
+  flex-basis: 30%;
+  margin-right: 80px;
+  border-right: solid 5px $cool-grey;
+}
+
+.content {
+  flex-basis: 70%;
+  display: flex;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.portfolio {
+  margin-top: 100px;
+
+  .card {
+    background-color: $cool-grey;
+    border-radius: 10px;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+
+    img {
+      max-width: 250px;
+      border-radius: 10px;
+      flex-basis: 50%;
+    }
+
+    .description {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      h3 {
+        font-size: 34px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        max-width: 450px;
+        font-size: 18px;
+      }
+
+      .btn-wrapper {
+        margin-top: 30px;
+
+        a {
+          text-decoration: none;
+        }
+
+        button {
+          padding: 8px 15px;
+          margin-right: 10px;
+          border-radius: 10px;
+          cursor: pointer;
+          background-color: $neon-blue;
+          border: none;
+          color: $white;
+
+          &:hover {
+            background-color: $space-cadet;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+// footer section
+
+footer {
+  margin: 20px auto;
+  text-align: center;
 }
