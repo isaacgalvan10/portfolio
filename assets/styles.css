@@ -117,6 +117,24 @@ section aside {
   margin-top: 100px;
 }
 
+.portfolio aside {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.portfolio aside h2 {
+  margin-top: 250px;
+}
+
+.portfolio .content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 40px;
+}
+
 .portfolio .card {
   background-color: #929DB9;
   border-radius: 10px;
@@ -128,13 +146,38 @@ section aside {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 40px;
 }
 
-.portfolio .card img {
-  max-width: 250px;
+.portfolio .card .project-img {
+  position: relative;
+  height: 100%;
+}
+
+.portfolio .card .project-img img {
+  max-width: 300px;
   border-radius: 10px;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  height: 100%;
+}
+
+.portfolio .card .project-img .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: #00000044;
+  border-radius: 10px;
+}
+
+.portfolio .card .project-img:hover .overlay {
+  opacity: 1;
 }
 
 .portfolio .card .description {
@@ -153,11 +196,13 @@ section aside {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  padding: 0 20px;
 }
 
 .portfolio .card .description h3 {
   font-size: 34px;
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .portfolio .card .description p {
@@ -181,6 +226,7 @@ section aside {
   background-color: #4E68FD;
   border: none;
   color: #fff;
+  font-size: 16px;
 }
 
 .portfolio .card .description .btn-wrapper button:hover {

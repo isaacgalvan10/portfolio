@@ -107,6 +107,19 @@ section aside {
 .portfolio {
   margin-top: 100px;
 
+  aside {
+    align-items: flex-start;
+
+    h2 {
+      margin-top: 250px;
+    }
+  }
+
+  .content {
+    flex-direction: column;
+    padding-right: 40px;
+  }
+
   .card {
     background-color: $cool-grey;
     border-radius: 10px;
@@ -114,12 +127,38 @@ section aside {
     padding: 40px;
     display: flex;
     align-items: center;
+    margin-top: 40px;
 
-    img {
-      max-width: 250px;
-      border-radius: 10px;
-      flex-basis: 50%;
+    .project-img {
+      position: relative;
+      height: 100%;
+
+      img {
+        max-width: 300px;
+        border-radius: 10px;
+        flex-basis: 50%;
+        height: 100%;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #00000044;
+        border-radius: 10px;
+      }
+
+      &:hover .overlay {
+        opacity: 1;
+      }
+
     }
+
 
     .description {
       width: 100%;
@@ -128,10 +167,12 @@ section aside {
       justify-content: center;
       align-items: center;
       text-align: center;
+      padding: 0 20px;
 
       h3 {
         font-size: 34px;
         margin-bottom: 20px;
+        font-weight: 600;
       }
 
       p {
@@ -154,6 +195,7 @@ section aside {
           background-color: $neon-blue;
           border: none;
           color: $white;
+          font-size: 16px;
 
           &:hover {
             background-color: $space-cadet;

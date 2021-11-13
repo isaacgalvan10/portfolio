@@ -23,7 +23,7 @@
     </div>
   </header>
   <main>
-    <section class="about wrapper">
+    <section class="about wrapper" id="about">
       <aside>
         <h2>About Me</h2>
       </aside>
@@ -32,13 +32,16 @@
         <p>My name is Isaac Galvan, and I am a front end developer. I currently work remotely as a Wordpress developer.</p>
       </div>
     </section>
-    <section class="portfolio wrapper">
+    <section class="portfolio wrapper" id="portfolio">
       <aside>
         <h2>Portfolio</h2>
       </aside>
       <div class="content">
         <div class="card">
-          <img src="./assets/Easybank-project.5c9cca31.png" alt="easybank project">
+            <a class="project-img" href="https://easybank-ig.netlify.app/" target="_blank">
+              <img src="./assets/Easybank-project.5c9cca31.png" alt="easybank project">
+              <div class="overlay"></div>
+            </a>
           <div class="description">
             <h3>Easybank Project</h3>
             <p>This is a front end challenge from frontendmentor.io. I built this using React, SASS, and GSAP.</p>
@@ -52,10 +55,37 @@
             </div>
           </div>
         </div>
+        <div class="card">
+          <a class="project-img" href="https://react-saleswhale-isaacg.netlify.app/" target="_blank">
+            <img src="./assets/react-saleswhale.b16f8c1c.png" alt="easybank project">
+            <div class="overlay"></div>
+          </a>
+          <div class="description">
+            <h3>Saleswhale Project</h3>
+            <p>This is a front end challenge from frontendmentor.io. I built this using React, SASS, and GSAP.</p>
+            <div class="btn-wrapper">
+              <a href="https://react-saleswhale-isaacg.netlify.app/" target="_blank">
+                <button type="button">View Live</button>
+              </a>
+              <a href="https://github.com/isaacgalvan10/React-Saleswhale" target="_blank">
+                <button type="button">View Code</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about wrapper" id="about">
+      <aside>
+        <h2>Contact Me</h2>
+      </aside>
+      <div class="content">
+        <img src="./assets/Image20210422085942.jpg" alt="Isaac Galvan">
+        <p>My name is Isaac Galvan, and I am a front end developer. I currently work remotely as a Wordpress developer.</p>
       </div>
     </section>
     <footer>
-      <p>Made with ❤️</p>
+      <p>Made with ❤️ by Isaac Galvan</p>
     </footer>
   </main>
   <script src="https://kit.fontawesome.com/d3de187bce.js" crossorigin="anonymous"></script>
