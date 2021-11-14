@@ -69,6 +69,10 @@ h2 {
   font-size: 60px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .about {
   margin-top: 80px;
 }
@@ -132,13 +136,15 @@ section aside {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-right: 40px;
+  width: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .portfolio .card {
   background-color: #929DB9;
   border-radius: 10px;
-  width: 100%;
   padding: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -196,7 +202,7 @@ section aside {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 
 .portfolio .card .description h3 {
@@ -231,6 +237,41 @@ section aside {
 
 .portfolio .card .description .btn-wrapper button:hover {
   background-color: #192452;
+}
+
+.contact {
+  margin-top: 100px;
+}
+
+.contact .content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contact .content li {
+  margin: 20px 0;
+}
+
+.contact .content li a {
+  color: #929DB9;
+}
+
+.contact .content li a:hover {
+  color: #fff;
+}
+
+.contact .content li i {
+  font-size: 20px;
+}
+
+.contact .content li span {
+  font-size: 20px;
+  margin-left: 20px;
 }
 
 footer {
