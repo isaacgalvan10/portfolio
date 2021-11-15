@@ -33,4 +33,4 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ## Screenshot of project
 
-![Portfolio demo](.\assets\project-screenshot.png)
+![Portfolio demo](./assets/project-screenshot.png)
