@@ -105,6 +105,10 @@ section aside {
   border-right: solid 5px #929DB9;
 }
 
+section aside h2 {
+  margin-right: 10px;
+}
+
 .content {
   -ms-flex-preferred-size: 70%;
       flex-basis: 70%;
@@ -217,7 +221,7 @@ section aside {
 }
 
 .portfolio .card .description .btn-wrapper {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .portfolio .card .description .btn-wrapper a {
@@ -226,7 +230,7 @@ section aside {
 
 .portfolio .card .description .btn-wrapper button {
   padding: 8px 15px;
-  margin-right: 10px;
+  margin: 10px;
   border-radius: 10px;
   cursor: pointer;
   background-color: #4E68FD;
@@ -277,5 +281,70 @@ section aside {
 footer {
   margin: 20px auto;
   text-align: center;
+}
+
+@media all and (max-width: 1152px) {
+  .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section aside {
+    border: none;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin: 0;
+  }
+  section aside h2 {
+    margin: 0;
+  }
+  .portfolio {
+    margin-top: 0;
+  }
+  .portfolio aside h2 {
+    margin-top: 80px;
+  }
+  .portfolio .content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
+}
+
+@media all and (max-width: 732px) {
+  .container {
+    padding: 0 20px;
+  }
+  .wrapper {
+    padding: 0 20px;
+  }
+  .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about img {
+    margin: 0;
+  }
+  .about p {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .portfolio .card {
+    padding: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolio .card .description {
+    margin-top: 20px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
