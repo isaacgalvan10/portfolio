@@ -284,6 +284,12 @@ footer {
 }
 
 @media all and (max-width: 732px) {
+  header {
+    ul li a {
+      font-size: 18px;
+    }
+  }
+
   .container {
     padding: 0 20px;
   }
