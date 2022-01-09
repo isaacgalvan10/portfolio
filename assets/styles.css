@@ -170,6 +170,8 @@ section aside h2 {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .portfolio .card .project-img .overlay {
