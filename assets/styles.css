@@ -1,10 +1,10 @@
 body {
-  background-color: #0C133D;
+  background-color: #0c133d;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-  background-color: #4E68FD;
+  background-color: #4e68fd;
   padding: 20px 0;
 }
 
@@ -35,7 +35,7 @@ header ul li i {
 }
 
 header ul li a {
-  color: #0C133D;
+  color: #0c133d;
   text-decoration: none;
   font-size: 22px;
   font-weight: 600;
@@ -60,7 +60,9 @@ header ul li a:hover {
   padding: 0 40px;
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
   color: #fff;
   line-height: 1.2em;
 }
@@ -79,7 +81,7 @@ a {
 
 .about img {
   max-width: 250px;
-  border: solid 5px #929DB9;
+  border: solid 5px #929db9;
   border-radius: 10px;
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
@@ -87,8 +89,8 @@ a {
 }
 
 .about p {
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   font-size: 22px;
 }
 
@@ -102,7 +104,7 @@ section aside {
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
   margin-right: 80px;
-  border-right: solid 5px #929DB9;
+  border-right: solid 5px #929db9;
 }
 
 section aside h2 {
@@ -147,7 +149,7 @@ section aside h2 {
 }
 
 .portfolio .card {
-  background-color: #929DB9;
+  background-color: #929db9;
   border-radius: 10px;
   padding: 40px;
   display: -webkit-box;
@@ -182,8 +184,8 @@ section aside h2 {
   right: 0;
   width: 100%;
   opacity: 0;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
   background-color: #00000044;
   border-radius: 10px;
 }
@@ -235,7 +237,7 @@ section aside h2 {
   margin: 10px;
   border-radius: 10px;
   cursor: pointer;
-  background-color: #4E68FD;
+  background-color: #4e68fd;
   border: none;
   color: #fff;
   font-size: 16px;
@@ -264,7 +266,7 @@ section aside h2 {
 }
 
 .contact .content li a {
-  color: #929DB9;
+  color: #929db9;
 }
 
 .contact .content li a:hover {

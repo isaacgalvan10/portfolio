@@ -1,11 +1,10 @@
 // Color Palette
 
-$oxford-blue : #0C133D;
-$neon-blue : #4E68FD;
-$cool-grey : #929DB9;
-$space-cadet : #192452;
-$white : #fff;
-
+$oxford-blue: #0c133d;
+$neon-blue: #4e68fd;
+$cool-grey: #929db9;
+$space-cadet: #192452;
+$white: #fff;
 
 body {
   background-color: $oxford-blue;
@@ -26,14 +25,14 @@ header {
 
   ul {
     display: flex;
-  
+
     li {
       margin: 0 10px;
 
       i {
         font-size: 30px;
       }
-      
+
       a {
         color: $oxford-blue;
         text-decoration: none;
@@ -61,7 +60,9 @@ header {
   padding: 0 40px;
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
   color: $white;
   line-height: 1.2em;
 }
@@ -88,7 +89,7 @@ a {
   }
 
   p {
-    flex-basis: 60%;
+    flex-basis: 100%;
     font-size: 22px;
   }
 }
@@ -157,7 +158,7 @@ section aside {
         right: 0;
         width: 100%;
         opacity: 0;
-        transition: .5s ease;
+        transition: 0.5s ease;
         background-color: #00000044;
         border-radius: 10px;
       }
@@ -165,9 +166,7 @@ section aside {
       &:hover .overlay {
         opacity: 1;
       }
-
     }
-
 
     .description {
       width: 100%;
@@ -212,7 +211,6 @@ section aside {
         }
       }
     }
-
   }
 }
 
@@ -228,7 +226,7 @@ section aside {
     li {
       margin: 20px 0;
       a {
-      color: $cool-grey;
+        color: $cool-grey;
 
         &:hover {
           color: $white;
